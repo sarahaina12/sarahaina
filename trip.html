@@ -1,0 +1,228 @@
+<html>
+<head>
+<title>Short Trip</title>
+
+<link rel="stylesheet" type="text/css" href="C:\Users\User\OneDrive\Desktop\imd311/style.css">
+
+<body bgcolor="lightgoldenrodyellow">
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/index.html">Home</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/aboutme.html">About Me</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/family.html">My Family</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/education.html">Education</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/hobby.html">Hobby</a>
+  <a href="C:\Users\User\OneDrive\Desktop\imd311/trip.html">Short Trip</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<img src="bannerholiday.png" alt="Banner Short Trip" width="1500" height="600" style="width:100%;">
+
+
+<h2>Short Trip Gallery</h2>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip4.jpeg">
+      <img src="trip4.jpeg" alt="Georgetown World Heritage Site" width="600" height="400">
+    </a>
+    <div class="desc">Georgetown World Heritage Site</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip1.jpeg">
+      <img src="trip1.jpeg" alt="Chew Jetty" width="600" height="400">
+    </a>
+    <div class="desc">Chew Jetty</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip5.jpeg">
+      <img src="trip5.jpeg" alt="Street Arts Penang" width="600" height="400">
+    </a>
+    <div class="desc">Street Arts Penang</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip7.jpeg">
+      <img src="trip7.jpeg" alt="Little India Penang" width="600" height="400">
+    </a>
+    <div class="desc">Padang Kota</div>
+  </div>
+</div>
+<br>
+<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip.jpeg">
+      <img src="trip.jpeg" alt="Georgetown World Heritage Site" width="600" height="400">
+    </a>
+    <div class="desc">Penang Jetty</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip2.jpeg">
+      <img src="trip2.jpeg" alt="Street Arts Penang" width="600" height="400">
+    </a>
+    <div class="desc">Masjid Kapitan Keling</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip6.jpg">
+      <img src="trip6.jpg" alt="Hameediyah Restaurant" width="600" height="800">
+    </a>
+    <div class="desc">Hameediyah Restaurant</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="trip3.jpeg">
+      <img src="trip3.jpeg" alt="Little India Penang" width="600" height="400">
+    </a>
+    <div class="desc">Little India Penang</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p style="main">This is a one-day trip to Georgetown,Pulau Pinang with my housemates.
+</p>
+</div>
+
+<br>
+<p style="main">This is a short video during my short trip made by my housemate,Nisa and me.</p>
+<p>This video is available on TikTok.</p>
+<p style="main"><a href="https://vt.tiktok.com/ZSL5K4pTd/">Short Trip Video</p></a>
+
+
+</body>
+</html>
