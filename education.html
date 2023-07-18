@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Education</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body bgcolor="blanchedalmond">
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="family.html">My Family</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="trip.html">Short Trip</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<img src="banner4.png" alt="Education" width="1500" height="600" style="width:100%;">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<style> 
+table, th, td { 
+  border: 1px solid black; 
+} 
+</style> 
+ 
+</table>  
+
+<center><table style="width:74.9%"></center>
+  <tr> 
+    <th></th> 
+    <th>School name</th>  
+    <th>Duration</th> 
+  </tr> 
+
+  <tr> 
+<th rowspan="10">MY School</th> 
+
+    <td><p align="justify">Sekolah Kebangsaan Bukit Rahman Putra</td></p> 
+    <td><p align="center">Grades 1-6</td></p> 
+     
+  </tr> 
+  <tr> 
+    <td><p align="justify">Kafa Integrasi Impian Indah </td></p> 
+    <td><p align="center">Grades 1-6</td></p> 
+     
+  </tr> 
+  <tr> 
+    <td><p align="justify">Sekolah Menengah Kebangsaan Bukit Rahman Putra</td></p> 
+    <td><p align="center">Form 1-5</td></p> 
+
+   <tr> 
+    <td><p align="justify">Universiti Teknologi Mara Cawangan Sungai Petani Kedah</td></p> 
+    <td><p align="center">Semester 1-5</td></p>
+
+  </tr>
+
+
+
+</body>
+</html>

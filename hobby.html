@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>My Hobby</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body bgcolor="lavender">
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="family.html">My Family</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="trip.html">Short Trip</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<img src="banner5.png" alt="My Hobby" width="1500" height="600" style="width:100%;">
+
+
+<br>
+<br>
+
+<p style="main">We can't overstate the value that hobbies provide to our lives. They give us something to think about when we have some spare time, and they also make us happy. Our getaway from the actual world and activity that helps us forget about our troubles are our hobbies. In addition to that, they make the way we live more exciting and entertaining. When seen in this light, each of our pastimes is highly beneficial to us. Watching television shows, motion pictures, and anime is one of my favorite hobbies.</p>
+
+<br>
+<br>
+<img src="drama 3.gif" alt="Watching Drama" style="width:400px;height:200px;" class="center">
+<br>
+
+<p style="main">My activity can be considered a waste of time by some people, but for me, it's a place of comfort. This is owing to the fact that I often take the completion of a task as an opportunity to reward myself by watching a drama , movie or an anime show. I consider this my reward for completing the task at hand. It makes no difference to me whether this is a major or minor thing. Anything that I've done needs to have a form of reward for me, both so that I can feel like I've accomplished something and so that I can be more productive in the future.  </p>
+
+<br>
+<br>
+<img src="buddy daddies.jpg" width="50%"  class="center">
+<br>
+
+<p style="main">Recently, I've been very into the anime series Buddy Daddies. Kazuki Kurusu, the protagonist, is a criminal coordinator and lives with his closest buddy Rei Suwa, a trained assassin who has been doing contract killing since he was a youngster. While Rei is a man of few words who spends his free time playing video games, the extroverted Kazuki enjoys gambling and ladies. After four-year-old Miri Unasaka, whose father is a mafia leader, walks into a hotel shootout seeking for him, the two friends find themselves taking care of her. In this anime, we see how the two killers evolve as a result of their time spent caring for Miri. Totally family-friendly, this show. Even though I've only seen the first 12 episodes of this anime, I'm really enjoying the story and how they all turn out to be a happy family in the end. While I can see why many fans of this anime would want to see more episodes, I personally found the series' conclusion to be satisfying enough that I didn't feel the need to continue the series.</p>
+
+<style>
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+
+<div class="scroll-container">
+  <img src="miri.jpg" width="500" height="400">
+  <img src="kazuki.jpg" width="500" height="400">
+  <img src="rei suwa.jpg" width="500" height="400">
+  <img src="kyutaro.jpg" width="500" height="400">
+</div>
+
+<center><p>Characters in Buddy Daddies.</center></p>
+
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>About me</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body bgcolor="aliceblue">
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="family.html">My Family</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="trip.html">Short Trip</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<img src="banner2.png" alt="My Family" width="1500" height="600" style="width:100%;">
+
+
+<a href= "index.html"></a>
+<br>
+<p align="center"><a href="#GambarHariRaya">GambarHariRaya</p></a>
+<br>
+<p align="center"><a href="#RandomSelfie">RandomSelfie</p></a>
+<br>
+
+
+<div class="row">
+  <div class="column">
+<p align="center"><a name="GambarHariRaya">GambarHariRaya</p></a>
+    <img src="me2.jpg" alt="Me2" style="width:80%" class="center">
+
+  </div>
+  <div class="column">
+<p align="center"><a name="RandomSelfie">RandomSelfie</p></a>
+    <img src="me5.jpeg" alt="Me5" style="width:80%" class="center">
+
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<div class="content">
+  <img src="me6.jpeg" alt="Bear" style="width:50%" class="center">
+  <h3>Myself</h3>
+  <p style="main">Before anything else, let me introduce myself. It's Sarah Aina Binti Ahamad Zahidi here.Living in Sungai Buloh, Selangor, I am 21 years old. On August 3, 2002, at 7:17 p.m., I was born in the Hospital Bersalin in Kuala Lumpur. I'm now pursuing a diploma in information management at UiTM Kedah. While I was studying, I also resided outside of UiTM Kedah in Taman Lembah Bujang Fasa 3.</p>
+  <p style="main">I just completed the MBTI assessment in every detail. The results confirmed my suspicions that I am an ISTP. I am not a firm individualist despite being an ISTP.I'm usually on my own when it comes to meeting my basic necessities and providing for myself. My parents are the ones I go to for guidance and support at this time. I, too, am usually timid and inhibited. When I speak, it's usually to myself. In addition to being timid because I am self-conscious about letting others see the real me, I am also uncomfortable with the spotlight. My closest friends and family, however, are an exception to these rules.</p>
+<p style="main">I might be a little reserved at first, but after I get to know someone as well as you get to know me, I'm an outstanding girl. I have a hard time making friends, but once I do, we have an incredible time together since we are all so unique. I receive as much as I give in terms of laughs, jokes, and comedy from the people around me. Depending on the group of people I remain close to, my personality tends to switch from being reserved and humorous. Spending time alone is a great way to refuel after spending time with others, which is why I value it so much. One of the most significant things that helps me have more energy the following day is my time alone.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

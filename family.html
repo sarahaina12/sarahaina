@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>My Family</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body bgcolor="honeydew">
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+
+
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="family.html">My Family</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="trip.html">Short Trip</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<img src="banner3.png" alt="My Family" width="1500" height="600" style="width:100%;">
+
+
+<br>
+<br>
+<br>
+<img src="father.jpg" alt="Father" style="width:50%" class="center">
+<br>
+<br>
+<p align="justify"><font face="lucida calligraphy" size="4">My dad is in the picture. Mr. Ahamad Zahidi Bin Alias is the name of my father.My dad has made it to 55 years old. My father was born in Kuala Kangsar, Perak, on 24 April 1968. My dad worked as a labtechnician for a private corporation in Petaling Jaya, Selangor, till he just retired. My dad is a very rigid person.He always reminds me to keep praying everywhere we go. A sincere prayer has the power to reunite us with God.</p>
+<br>
+<br>
+<br>
+<img src="mother.jpg" alt="Mother" style="width:20%" class="center">
+<br>
+<br>
+<p align="justify"><font face="lucida calligraphy" size="4">Here is my mom.Mahani Binti Mat is the name of my mum. There are 55 years between her and her mother. My mom was born in Pasir Panjang, Selangor, on November 1, 1968. My mom is a stay-at-home mom. My mom is a really nurturing individual. Mother is always warning me to watch what I eat to avoid developing stomach illness. Mother also does a lot of the cooking for the household.Food prepared by my mother's hands is simply the best I've ever tasted.</p></font>
+<br>
+<br>
+<br>
+<img src="sister.jpg" width="410" height="600" class="center">
+<p align="center">This is my sister</p>
+<br>
+<p style="main">I have two sisters, one elder and one younger. Fatin Nabilah Binti Ahamad Zahidi is the name of my older sister. He's a young man of 25. My oldest brother and his wife are employers, and so is my sister. Consequently, they often travel to their workplace together. My sis enjoys listening to music with a lot of heart. My sister like Jiwang music and often sings along to Jiwang music videos on TV. Aida Hannani Binti Ahamad Zahidi, my younger sister, is 19 years old. My sibling is also a current UiTM Seremban student. My sis got her diploma in business management.</p>
+<br>
+<br>
+
+<img src="brother.jpg" width="410" height="600" class="center">
+<p align="center">This is my brother</p>
+<br>
+<p style="main">There are two brothers in my family. Muhammad Syahmi Bin Ahamad Zahidi is my oldest brother, while Muhammad Izzat Bin Ahamad Zahidi is my younger brother. Both of my brothers are in their twenties; the older one is 27 and the younger one is 24. My older brother is an operator at a plant not far from where we live. He's a fiery individual, my brother. When I move my brother's belongings from their usual spot, he becomes really upset. That was something I did in the past that earned me a reprimand from him. In addition, my other brother is employed as an information technology specialist for a firm in Kota Damansara. One of my brothers graduated from UiTM.</p>
+<br>
+<br>
+
+
+
+</body>
+</html>
